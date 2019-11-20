@@ -13,9 +13,11 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 @EnableAsync
 @Configuration
-public class TaskConfig {
+public class TaskConfig
+{
     @Bean
-    TaskExecutor taskExecutor() {
+    TaskExecutor taskExecutor()
+    {
         return new SimpleAsyncTaskExecutor();
     }
 }
